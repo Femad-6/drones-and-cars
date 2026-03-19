@@ -1,0 +1,57 @@
+{
+    "system_info": {
+        "name": "五龙镇配送优化系统",
+        "version": "1.0.0",
+        "description": "测试配置文件"
+    },
+    "vehicle_params": {
+        "num_vehicles": 4,
+        "capacity": 1800.0,
+        "speed": 55.0,
+        "max_hours": 10.0,
+        "fuel_consumption": 0.25,
+        "fuel_price": 7.0,
+        "driver_time_price": 65.0,
+        "deploy_fixed_cost": 25.0
+    },
+    "drone_params": {
+        "max_payload": 100.0,
+        "max_range": 15.0,
+        "empty_range": 30.0,
+        "speed": 65.0,
+        "battery_capacity": 2.5,
+        "electricity_price": 0.65,
+        "weight": 12.0,
+        "time_price": 25.0,
+        "max_hours": 10.0,
+        "trip_fixed_cost": 6.0
+    },
+    "ga_params": {
+        "population_size": 200,
+        "generations": 600,
+        "mutation_rate": 0.3,
+        "crossover_rate": 0.9,
+        "elite_size": 0.15
+    },
+    "time_constraints": {
+        "time_tag": 2.5,
+        "penalty_time": 250.0,
+        "use_hard_constraint": false,
+        "fuzzy_threshold": 0.6
+    },
+    "subsidy_policy": {
+        "down_base": {
+            "fast": 1.2,
+            "slow": 0.6
+        },
+        "up_base": {
+            "fast": 0.9,
+            "slow": 0.45
+        },
+        "alpha_down": 0.25,
+        "alpha_up": 0.25,
+        "subsidy_stage": 1,
+        "subsidy_budget": 6000.0,
+        "over_budget_penalty": 6.0
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "system_info": {
+        "name": "五龙镇配送优化系统 - 示例配置",
+        "version": "1.0.0",
+        "description": "用于测试和演示的示例配置"
+    },
+    "vehicle_params": {
+        "num_vehicles": 3,
+        "capacity": 1500,
+        "speed": 50.0,
+        "fuel_consumption": 0.252,
+        "fuel_price": 6.89,
+        "driver_time_price": 60.0,
+        "max_hours": 8.0,
+        "deploy_fixed_cost": 20.0
+    },
+    "drone_params": {
+        "max_payload": 80.0,
+        "max_range": 12.0,
+        "empty_range": 26.0,
+        "speed": 60.0,
+        "battery_capacity": 2.132,
+        "electricity_price": 0.6,
+        "weight": 10.0,
+        "time_price": 20.0,
+        "max_hours": 8.0,
+        "trip_fixed_cost": 5.0
+    },
+    "time_constraints": {
+        "time_tag": 2.0,
+        "penalty_time": 200.0,
+        "use_hard_constraint": false,
+        "fuzzy_threshold": 0.56
+    },
+    "ga_params": {
+        "population_size": 100,
+        "generations": 200,
+        "mutation_rate": 0.25,
+        "crossover_rate": 0.85,
+        "elite_size": 10
+    },
+    "file_paths": {
+        "vehicle_distance_file": "data/物流车配送距离.xlsx",
+        "village_distance_file": "data/五龙镇各村距离矩阵.xlsx",
+        "output_dir": "output/",
+        "config_dir": "config/",
+        "log_file": "output/system.log"
+    },
+    "visualization_params": {
+        "figsize_main": [
+            20,
+            10
+        ],
+        "figsize_single": [
+            12,
+            8
+        ],
+        "dpi": 300,
+        "font_family": [
+            "SimHei",
+            "Microsoft YaHei"
+        ],
+        "color_palette": [
+            "#5ebfc2",
+            "#5dcfbd",
+            "#72deaf",
+            "#97ea9b",
+            "#c5f384",
+            "#f9f871"
+        ],
+        "vehicle_colors": [
+            "#FF6B6B",
+            "#4ECDC4",
+            "#45B7D1",
+            "#96CEB4",
+            "#FFEAA7"
+        ],
+        "drone_color": "#9B59B6"
+    }
+}

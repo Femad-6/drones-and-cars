@@ -1,0 +1,53 @@
+{
+    "api_settings": {
+        "baidu_map": {
+            "api_key": "请在此处填入您的百度地图API密钥",
+            "description": "百度地图API密钥，用于获取真实的车辆行驶距离",
+            "how_to_get": "访问 https://lbsyun.baidu.com/ 申请API密钥",
+            "required_services": [
+                "地理编码服务",
+                "路径规划服务"
+            ]
+        }
+    },
+    "smart_distance_settings": {
+        "use_api": true,
+        "city": "济源市",
+        "request_interval": 0.1,
+        "max_retries": 3,
+        "fallback_multiplier": 1.3
+    },
+    "example_locations": {
+        "五龙镇政府": [
+            35.0967,
+            112.5903
+        ],
+        "丰峪村": [
+            35.1234,
+            112.6345
+        ],
+        "上庄村": [
+            35.0800,
+            112.6100
+        ],
+        "泽下村": [
+            35.1100,
+            112.5700
+        ],
+        "文峪村": [
+            35.0750,
+            112.6200
+        ]
+    },
+    "usage_notes": [
+        "将此文件重命名为 api_config.json 并填入真实API密钥",
+        "API密钥可以在百度地图开放平台申请",
+        "免费配额：地理编码6000次/天，路径规划3000次/天",
+        "超出配额后按次计费，请合理使用",
+        "建议在测试时先使用少量地点"
+    ]
+}
+
+
+
+

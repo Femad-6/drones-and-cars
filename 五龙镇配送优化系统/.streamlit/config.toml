@@ -1,0 +1,24 @@
+[server]
+# 文件上传大小限制 (MB)
+maxUploadSize = 50
+
+# 服务器配置
+port = 8501
+address = "localhost"
+headless = false
+runOnSave = false
+
+# 禁用统计收集
+[browser]
+gatherUsageStats = false
+
+# 主题配置
+[theme]
+primaryColor = "#FF6B6B"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F0F2F6"
+textColor = "#262730"
+
+# 日志配置
+[logger]
+level = "info"
